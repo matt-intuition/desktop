@@ -1,0 +1,259 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/**
+ * Intuition Panel Styles
+ *
+ * Styling for the AI features sidebar panel
+ */
+
+.intuition-panel {
+  width: 350px;
+  min-width: 300px;
+  max-width: 500px;
+  height: 100%;
+  background-color: var(--zen-colors-secondary);
+  border-left: 1px solid var(--zen-colors-border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.intuition-panel-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--zen-colors-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--zen-colors-primary);
+}
+
+.intuition-panel-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--zen-colors-text);
+  margin: 0;
+}
+
+.intuition-panel-close {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.intuition-panel-close:hover {
+  background-color: var(--zen-colors-tertiary);
+}
+
+.intuition-panel-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px;
+}
+
+/* Sections */
+
+.intuition-section {
+  margin-bottom: 24px;
+}
+
+.intuition-section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--zen-colors-text);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.intuition-section-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--zen-colors-text-secondary);
+  margin: 0;
+}
+
+/* Loading and Error States */
+
+.intuition-loading,
+.intuition-error {
+  font-size: 13px;
+  color: var(--zen-colors-text-secondary);
+  text-align: center;
+  padding: 32px 16px;
+  display: block;
+}
+
+.intuition-error {
+  color: var(--zen-colors-error, #ff6b6b);
+}
+
+/* Suggestions */
+
+.intuition-suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.intuition-suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--zen-colors-tertiary);
+  border-radius: 6px;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.intuition-suggestion-item:hover {
+  background-color: var(--zen-colors-border);
+}
+
+.intuition-suggestion-title {
+  flex: 1;
+  font-size: 13px;
+  color: var(--zen-colors-text);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.intuition-suggestion-action {
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: var(--zen-primary-color, #4a9eff);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.intuition-suggestion-action:hover {
+  opacity: 0.9;
+}
+
+/* Clips */
+
+.intuition-clips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.intuition-clip-item {
+  padding: 12px;
+  background-color: var(--zen-colors-tertiary);
+  border-radius: 6px;
+  border-left: 3px solid var(--zen-primary-color, #4a9eff);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.intuition-clip-item:hover {
+  background-color: var(--zen-colors-border);
+}
+
+.intuition-clip-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--zen-colors-text);
+  margin-bottom: 4px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.intuition-clip-date {
+  font-size: 11px;
+  color: var(--zen-colors-text-secondary);
+  display: block;
+}
+
+/* Quick Actions */
+
+.intuition-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.intuition-action-button {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: var(--zen-colors-tertiary);
+  color: var(--zen-colors-text);
+  border: 1px solid var(--zen-colors-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.intuition-action-button:hover {
+  background-color: var(--zen-colors-border);
+  border-color: var(--zen-primary-color, #4a9eff);
+}
+
+.intuition-action-button:active {
+  transform: scale(0.98);
+}
+
+/* Scrollbar */
+
+.intuition-panel-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.intuition-panel-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.intuition-panel-content::-webkit-scrollbar-thumb {
+  background: var(--zen-colors-border);
+  border-radius: 4px;
+}
+
+.intuition-panel-content::-webkit-scrollbar-thumb:hover {
+  background: var(--zen-colors-text-secondary);
+}
+
+/* Dark mode adjustments */
+
+@media (prefers-color-scheme: dark) {
+  .intuition-panel {
+    --zen-colors-primary: #1a1a2e;
+    --zen-colors-secondary: #16213e;
+    --zen-colors-tertiary: #0f3460;
+    --zen-colors-border: #2a2a3e;
+    --zen-colors-text: #e4e4e7;
+    --zen-colors-text-secondary: #a1a1aa;
+    --zen-primary-color: #4a9eff;
+  }
+}
+
+/* Light mode adjustments */
+
+@media (prefers-color-scheme: light) {
+  .intuition-panel {
+    --zen-colors-primary: #ffffff;
+    --zen-colors-secondary: #f8f9fa;
+    --zen-colors-tertiary: #e9ecef;
+    --zen-colors-border: #dee2e6;
+    --zen-colors-text: #212529;
+    --zen-colors-text-secondary: #6c757d;
+    --zen-primary-color: #0d6efd;
+  }
+}

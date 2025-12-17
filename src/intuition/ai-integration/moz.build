@@ -1,0 +1,14 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+with Files("**"):
+    BUG_COMPONENT = ("Intuition Browser", "AI Integration")
+
+EXTRA_JS_MODULES += [
+    "IntuitionManager.sys.mjs",
+    "api/IntuitionAPIClient.sys.mjs",
+    "content/ContentExtractor.sys.mjs",
+    "suggestions/SmartSuggestions.sys.mjs",
+    "research/ResearchTools.sys.mjs",
+]
