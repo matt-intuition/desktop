@@ -3,50 +3,46 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/.
    -->
-<!-- TODO: Get a job -->
-<img src="./docs/assets/zen-dark.svg" width="100px" align="left">
 
-### `Zen Browser`
+### `Intuition Browser`
 
-[![Downloads](https://img.shields.io/github/downloads/zen-browser/desktop/total.svg)](https://github.com/zen-browser/desktop/releases)
-[![Crowdin](https://badges.crowdin.net/zen-browser/localized.svg)](https://crowdin.com/project/zen-browser)
-[![Zen Release builds](https://github.com/zen-browser/desktop/actions/workflows/build.yml/badge.svg?branch=stable)](https://github.com/zen-browser/desktop/actions/workflows/build.yml)
+[![Downloads](https://img.shields.io/github/downloads/matt-intuition/desktop/total.svg)](https://github.com/matt-intuition/desktop/releases)
 
-Zen is a firefox-based browser with the aim of pushing your productivity to a new level!
+Intuition Browser is an AI-powered, Firefox-based browser designed for knowledge work and research. Built on the Intuition knowledge graph platform, it brings intelligent content understanding, smart suggestions, and powerful research tools directly into your browsing experience.
 
 <div flex="true">
-  <a href="https://zen-browser.app/download">
-    Download
-  </a>
-  •
-  <a href="https://zen-browser.app">
+  <a href="https://intuition.systems">
     Website
   </a>
   •
-  <a href="https://docs.zen-browser.app">
+  <a href="https://docs.intuition.systems">
     Documentation
   </a>
   •
-  <a href="https://zen-browser.app/release-notes/latest">
-    Release Notes
+  <a href="https://github.com/matt-intuition/desktop">
+    GitHub
   </a>
 </div>
 
-### Firefox Versions
+### Key Features
 
-- [`Release`](https://zen-browser.app/download) - Is currently built using Firefox version `146.0`! 🚀
-- [`Twilight`](https://zen-browser.app/download?twilight) - Is currently built using Firefox version `RC 146.0`!
+- **AI Content Understanding**: Automatic page summarization, entity extraction, and semantic search
+- **Smart Suggestions**: Predictive navigation and personalized recommendations powered by your browsing context
+- **Enhanced Workspaces**: AI-powered tab organization and context management
+- **Research Tools**: Built-in web clipping, annotation, and knowledge base integration
+- **Intuition Integration**: Direct connection to the Intuition knowledge graph platform
+
+### Firefox Version
+
+Built on Firefox `146.0` for maximum compatibility and security.
 
 ### Contributing
 
-If you'd like to report a bug, please do so on our [GitHub Issues page](https://github.com/zen-browser/desktop/issues/) and for feature requests, you can use [Github Discussions](https://github.com/zen-browser/desktop/discussions).
+Intuition Browser is an open-source project forked from Zen Browser. We welcome contributions from the community!
 
-Zen is an open-source project, and we welcome contributions from the community! Please take a look at the [contribution guidelines](./docs/contribute.md) before getting started!
+- Report bugs on our [GitHub Issues page](https://github.com/matt-intuition/desktop/issues/)
+- Request features via [Github Discussions](https://github.com/matt-intuition/desktop/discussions)
 
-#### Partners
+### Credits
 
-Thanks to all the partners of Zen for their support and contributions:
-
-<a href="https://blacksmith.sh">
-  <img src="./docs/assets/blacksmith-yellow.png" width="350px"/>
-</a>
+Built on top of the excellent [Zen Browser](https://github.com/zen-browser/desktop) project.

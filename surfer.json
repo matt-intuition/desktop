@@ -1,8 +1,8 @@
 {
-  "name": "Zen Browser",
-  "vendor": "Zen OSS Team",
-  "appId": "zen",
-  "binaryName": "zen",
+  "name": "Intuition Browser",
+  "vendor": "Intuition Team",
+  "appId": "intuition",
+  "binaryName": "intuition",
   "version": {
     "product": "firefox",
     "version": "146.0",
@@ -14,14 +14,14 @@
   "addons": {},
   "brands": {
     "release": {
-      "backgroundColor": "#282A33",
-      "brandShorterName": "Zen",
-      "brandShortName": "Zen",
-      "brandFullName": "Zen Browser",
+      "backgroundColor": "#1a1a2e",
+      "brandShorterName": "Intuition",
+      "brandShortName": "Intuition",
+      "brandFullName": "Intuition Browser",
       "release": {
-        "displayVersion": "1.17.14b",
+        "displayVersion": "1.0.0",
         "github": {
-          "repo": "zen-browser/desktop"
+          "repo": "matt-intuition/desktop"
         },
         "archives": {
           "windows": "windows.mar",
@@ -34,14 +34,14 @@
       }
     },
     "twilight": {
-      "backgroundColor": "#282A33",
-      "brandShorterName": "Zen",
-      "brandShortName": "Twilight",
-      "brandFullName": "Zen Twilight",
+      "backgroundColor": "#1a1a2e",
+      "brandShorterName": "Intuition",
+      "brandShortName": "Intuition Dev",
+      "brandFullName": "Intuition Browser Dev",
       "release": {
-        "displayVersion": "1.18t",
+        "displayVersion": "1.0.0-dev",
         "github": {
-          "repo": "zen-browser/desktop"
+          "repo": "matt-intuition/desktop"
         }
       }
     }
@@ -52,5 +52,5 @@
     ],
     "licenseType": "MPL-2.0"
   },
-  "updateHostname": "updates.zen-browser.app"
+  "updateHostname": "updates.intuition.systems"
 }
