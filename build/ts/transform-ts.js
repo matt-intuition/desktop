@@ -3,7 +3,7 @@
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 const fs = require('fs');
-const MJS_FILES = ['src/zen/split-view/ZenViewSplitter.ts'];
+const MJS_FILES = ['src/intuition/split-view/ZenViewSplitter.ts'];
 
 for (const file of MJS_FILES) {
   const code = fs.readFileSync(file, 'utf8');

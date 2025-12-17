@@ -9,7 +9,7 @@ from pathlib import Path
 from json_with_comments import JSONWithCommentsDecoder
 
 IGNORE_PREFS_FILE_IN = os.path.join(
-    'src', 'zen', 'tests', 'ignorePrefs.json'
+    'src', 'intuition', 'tests', 'ignorePrefs.json'
 )
 IGNORE_PREFS_FILE_OUT = os.path.join(
     'engine', 'testing', 'mochitest', 'ignorePrefs.json'
@@ -19,7 +19,7 @@ MOCHITEST_NAME = "mochitests"
 
 
 def copy_ignore_prefs():
-  print("Copying ignorePrefs.json from src/zen/tests to engine/testing/mochitest...")
+  print("Copying ignorePrefs.json from src/intuition/tests to engine/testing/mochitest...")
   # if there are prefs that dont exist on output file, copy them from input file
   all_prefs = []
   with open(IGNORE_PREFS_FILE_OUT, 'r') as f:

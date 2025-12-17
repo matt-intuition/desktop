@@ -5,7 +5,7 @@
 import js from '@eslint/js';
 import globals from 'globals';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import zenGlobals from './src/zen/zen.globals.js';
+import zenGlobals from './src/intuition/zen.globals.js';
 
 export default defineConfig([
   {

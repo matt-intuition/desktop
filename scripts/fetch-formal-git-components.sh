@@ -5,7 +5,7 @@
 
 set -e
 
-COMPONENT_ROOT=$(pwd)/src/zen
+COMPONENT_ROOT=$(pwd)/src/intuition
 
 EXTRA_COMPONENTS=(
   "scripts"
